@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réparation Portable & Clé Minute</title>
+  <meta name="description" content="Service professionnel de réparation de téléphones portables et de clés minute." />
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #f59e0b;
+      --text: #0f172a;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+    header { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; padding: 1rem 0 3.5rem; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem; }
+    .logo { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.08em; }
+    nav a { margin-left: 1rem; color: rgba(255,255,255,0.95); font-weight: 600; }
+    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: center; }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 1rem; line-height: 1.1; }
+    .hero p { font-size: 1rem; color: rgba(255,255,255,0.95); }
+    .btn { display: inline-block; padding: 0.9rem 1.2rem; border-radius: 999px; font-weight: 700; margin-right: 0.8rem; margin-top: 0.6rem; }
+    .btn-primary { background: var(--accent); color: #111827; }
+    .btn-secondary { background: rgba(255,255,255,0.12); color: white; border: 1px solid rgba(255,255,255,0.25); }
+    .hero img { width: 100%; height: 320px; object-fit: cover; border-radius: 1rem; box-shadow: 0 12px 28px rgba(0,0,0,0.2); }
+    main { padding: 3rem 0 4rem; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; padding: 1.3rem; box-shadow: 0 8px 20px rgba(15,23,42,0.05); }
+    .card h3 { margin-top: 0; color: var(--primary-dark); }
+    .card p { color: var(--muted); }
+    .highlight { background: #ecfeff; border-left: 4px solid var(--primary); }
+    footer { background: #0f172a; color: white; padding: 1.3rem 0; text-align: center; }
+    @media (max-width: 820px) { .hero, .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="logo">TECHNICIEN & CLÉ MINUTE</div>
+        <nav>
+          <a href="accueil.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="propos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="hero">
+        <div>
+          <h1>Réparation rapide de portable et service de clé minute</h1>
+          <p>Nous intervenons rapidement pour réparer vos appareils, changer les pièces nécessaires et vous offrir un service professionnel et rassurant.</p>
+          <a class="btn btn-primary" href="https://wa.me/0143666535?text=Bonjour%2C%20je%20voudrais%20un%20devis%20pour%20un%20service%20de%20r%C3%A9paration%20de%20portable%20ou%20de%20cl%C3%A9%20minute." target="_blank" rel="noopener">Demander un devis</a>
+          <a class="btn btn-secondary" href="https://wa.me/0143666535" target="_blank" rel="noopener">Appeler maintenant</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=80" alt="Technicien en train de réparer un téléphone portable" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="cards">
+        <article class="card">
+          <h3>Services</h3>
+          <p>Découvrez nos interventions en réparation portable et en service de clé minute.</p>
+          <p><a href="services.html">Voir les services →</a></p>
+        </article>
+        <article class="card highlight">
+          <h3>À propos</h3>
+          <p>Apprenez-en plus sur notre approche, notre professionnalisme et notre engagement.</p>
+          <p><a href="propos.html">En savoir plus →</a></p>
+        </article>
+        <article class="card">
+          <h3>Contact</h3>
+          <p>Besoin d’un rendez-vous ou d’une aide rapide ? Contactez-nous dès maintenant.</p>
+          <p><a href="contact.html">Nous contacter →</a></p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Réparation Portable & Clé Minute</p>
+    </div>
+  </footer>
+</body>
+</html>
